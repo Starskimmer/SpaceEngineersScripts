@@ -97,7 +97,7 @@ void ManageThrusters()
     if (manageAllThrust)
         GridTerminalSystem.GetBlocksOfType<IMyThrust>(thrusters);
     else
-        GridTerminalSystem.SearchBlocksOfName(thrustToManageTag, thrusters, block => block is IMyThrust)
+        GridTerminalSystem.SearchBlocksOfName(thrustToManageTag, thrusters, block => block is IMyThrust);
     
     
     if (thrusters.Count == 0)
